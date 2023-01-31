@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Snake Game",
+  "version": "1.0.2",
+
+  "action": {
+    "default_title": "Play Me",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "unlimitedStorage",
+    "background",
+    "tabs",
+    "scripting"
+  ],
+  "icons": {
+    "16": "snake.ico",
+    "32": "snake.ico",
+    "48": "snake.ico",
+    "128": "snake.ico"
+  },
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background.service_worker": {
+    "scripts": ["./snake.js"]
+  }
+}
